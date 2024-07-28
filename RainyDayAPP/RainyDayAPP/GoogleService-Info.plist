@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDcTbntk1HOG5fxxcOSAU9eQuiBkXbDfCQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>476585586741</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.outlook.r.biri.RainyDayApp</string>
+	<key>PROJECT_ID</key>
+	<string>rainydayappfirebase-8592c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rainydayappfirebase-8592c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:476585586741:ios:db1d505cb837b0432d417c</string>
+	<key>DATABASE_URL</key>
+	<string>https://rainydayappfirebase-8592c-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

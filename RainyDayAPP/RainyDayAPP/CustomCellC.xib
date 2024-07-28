@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCellC" rowHeight="250" id="KGk-i7-Jjw" customClass="CustomCellC" customModule="RainyDayAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5N-t3-t0K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <date key="date" timeIntervalSinceReferenceDate="717606000.48405302">
+                            <!--2023-09-28 15:00:00 +0000-->
+                        </date>
+                        <locale key="locale" localeIdentifier="ain_JP"/>
+                        <connections>
+                            <action selector="changeDatePicker:" destination="KGk-i7-Jjw" eventType="valueChanged" id="V9T-0S-jkr"/>
+                        </connections>
+                    </datePicker>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="h5N-t3-t0K" secondAttribute="bottom" id="232-bD-TOF"/>
+                    <constraint firstItem="h5N-t3-t0K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8jo-Ze-Y2L"/>
+                    <constraint firstItem="h5N-t3-t0K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AHO-fA-dHH"/>
+                    <constraint firstAttribute="trailing" secondItem="h5N-t3-t0K" secondAttribute="trailing" id="EnO-GW-Tz5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-64.122137404580144" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+</document>

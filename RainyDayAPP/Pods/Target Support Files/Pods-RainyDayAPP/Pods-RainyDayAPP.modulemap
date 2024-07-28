@@ -1,0 +1,6 @@
+framework module Pods_RainyDayAPP {
+  umbrella header "Pods-RainyDayAPP-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VPU-dP-suK">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UAa-i3-taG">
+            <objects>
+                <viewController id="VPU-dP-suK" customClass="ViewController" customModule="RainyDayAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6yu-ta-crL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="h16-mB-oti">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雨の日を教えてくれるアプリ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVw-9G-HhW">
+                                <rect key="frame" x="18.5" y="268.5" width="283" height="31"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="22"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJU-uW-hV9">
+                                <rect key="frame" x="94" y="339.5" width="132" height="35.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain" title="通知をもらう" cornerStyle="dynamic" titleAlignment="center">
+                                    <backgroundConfiguration key="background" cornerRadius="20" strokeWidth="1">
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="SWQ-QL-04L" kind="presentation" modalPresentationStyle="fullScreen" id="1ZU-ms-zq9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never forget your umbrella." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKO-Vc-ipJ">
+                                <rect key="frame" x="71.5" y="538.5" width="177" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wu2-yz-GVc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="h16-mB-oti" secondAttribute="trailing" id="1Oj-m4-bBR"/>
+                            <constraint firstItem="aVw-9G-HhW" firstAttribute="centerY" secondItem="6yu-ta-crL" secondAttribute="centerY" id="4Sj-Ig-erm"/>
+                            <constraint firstItem="KJU-uW-hV9" firstAttribute="centerX" secondItem="6yu-ta-crL" secondAttribute="centerX" id="6dm-c4-pzM"/>
+                            <constraint firstItem="h16-mB-oti" firstAttribute="leading" secondItem="6yu-ta-crL" secondAttribute="leading" id="ASG-lW-Uhq"/>
+                            <constraint firstAttribute="bottom" secondItem="h16-mB-oti" secondAttribute="bottom" id="JKw-mc-dUd"/>
+                            <constraint firstItem="YKO-Vc-ipJ" firstAttribute="centerX" secondItem="6yu-ta-crL" secondAttribute="centerX" id="Unb-98-aZo"/>
+                            <constraint firstItem="aVw-9G-HhW" firstAttribute="centerX" secondItem="6yu-ta-crL" secondAttribute="centerX" id="apC-dt-ZVQ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="YKO-Vc-ipJ" secondAttribute="bottom" constant="10" id="f2U-XI-GBO"/>
+                            <constraint firstItem="KJU-uW-hV9" firstAttribute="top" secondItem="aVw-9G-HhW" secondAttribute="bottom" constant="40" id="jwQ-3g-fbV"/>
+                            <constraint firstItem="h16-mB-oti" firstAttribute="top" secondItem="6yu-ta-crL" secondAttribute="top" id="xms-Ob-8vp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rZy-sf-L3K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knM-ZB-DdA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2366" y="-830"/>
+        </scene>
+        <!--SettingViewController-->
+        <scene sceneID="8MP-Cr-1hK">
+            <objects>
+                <viewController title="SettingViewController" id="SWQ-QL-04L" customClass="SettingViewController" customModule="RainyDayAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zqU-sT-6HD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="3s5-DS-2Lp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qb7-qu-fJu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="h42-CY-g7o"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="設定" id="fyV-f7-TL9">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="KrH-J3-Q5j">
+                                            <connections>
+                                                <segue destination="VPU-dP-suK" kind="presentation" modalPresentationStyle="fullScreen" id="wfs-QO-dng"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="done" id="K4p-FL-WIq">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="BEo-sR-QUo">
+                                                <rect key="frame" x="190" y="2" width="114" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="追加">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <buttonConfiguration key="configuration" style="plain" title="リセット">
+                                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="cancelButton:" destination="SWQ-QL-04L" eventType="touchUpInside" id="S3C-iR-K0U"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SCw-cG-mNi">
+                                <rect key="frame" x="15" y="66" width="290" height="500"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="nW8-Hq-DwX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="SWQ-QL-04L" id="Yws-j8-kkK"/>
+                                    <outlet property="delegate" destination="SWQ-QL-04L" id="PjY-so-k5R"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6XH-G4-dFz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3s5-DS-2Lp" firstAttribute="bottom" secondItem="zqU-sT-6HD" secondAttribute="bottom" id="0DM-9g-BAG"/>
+                            <constraint firstItem="SCw-cG-mNi" firstAttribute="leading" secondItem="zqU-sT-6HD" secondAttribute="leading" constant="15" id="2YM-Mf-Q9K"/>
+                            <constraint firstAttribute="trailing" secondItem="SCw-cG-mNi" secondAttribute="trailing" constant="15" id="65V-EV-hfQ"/>
+                            <constraint firstItem="3s5-DS-2Lp" firstAttribute="trailing" secondItem="zqU-sT-6HD" secondAttribute="trailing" id="66Q-ul-r9Y"/>
+                            <constraint firstItem="qb7-qu-fJu" firstAttribute="leading" secondItem="zqU-sT-6HD" secondAttribute="leading" id="YXf-Ae-2oW"/>
+                            <constraint firstItem="SCw-cG-mNi" firstAttribute="top" secondItem="qb7-qu-fJu" secondAttribute="bottom" constant="16" id="h90-DC-WRd"/>
+                            <constraint firstItem="3s5-DS-2Lp" firstAttribute="top" secondItem="zqU-sT-6HD" secondAttribute="top" id="lKP-nM-4uh"/>
+                            <constraint firstAttribute="trailing" secondItem="qb7-qu-fJu" secondAttribute="trailing" id="s8F-6S-JgD"/>
+                            <constraint firstItem="qb7-qu-fJu" firstAttribute="top" secondItem="6XH-G4-dFz" secondAttribute="top" id="xZz-KZ-kHT"/>
+                            <constraint firstItem="3s5-DS-2Lp" firstAttribute="leading" secondItem="zqU-sT-6HD" secondAttribute="leading" id="xuh-wk-Fsq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="E81-Qd-Yua"/>
+                    <connections>
+                        <outlet property="tableView" destination="SCw-cG-mNi" id="nfH-z0-Coj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCv-UP-y0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1397" y="-830"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HomeBackgroundImage" width="600" height="600"/>
+        <image name="SettingBackgroundImage" width="836" height="661"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

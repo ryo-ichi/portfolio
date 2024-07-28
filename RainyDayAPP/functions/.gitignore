@@ -1,0 +1,4 @@
+node_modules/
+
+# シークレット情報を含むファイル除外
+firebaseAdminSDK.json
